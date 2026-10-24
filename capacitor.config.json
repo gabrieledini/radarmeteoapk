@@ -1,0 +1,9 @@
+{
+  "appId": "com.radarmeteo.app",
+  "appName": "Radar Meteo",
+  "webDir": "www",
+  "android": {
+    "backgroundColor": "#0f1d28",
+    "adjustMarginsForEdgeToEdge": "auto"
+  }
+}

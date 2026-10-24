@@ -1,0 +1,22 @@
+{
+  "name": "radar-meteo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Radar previsionale nuvole e pioggia (Open-Meteo) impacchettato come app Android con Capacitor",
+  "scripts": {
+    "build": "node scripts/copy-vendor.mjs",
+    "icons": "node scripts/make-icons.mjs && capacitor-assets generate --android --iconBackgroundColor \"#0f1d28\" --iconBackgroundColorDark \"#0f1d28\" --splashBackgroundColor \"#0f1d28\" --splashBackgroundColorDark \"#0f1d28\"",
+    "patch:android": "node scripts/patch-android.mjs",
+    "sync": "npm run build && cap sync android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/core": "^7.0.0",
+    "leaflet": "1.9.4"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^7.0.0",
+    "sharp": "^0.33.5"
+  }
+}
