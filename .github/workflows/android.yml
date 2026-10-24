@@ -32,7 +32,9 @@ jobs:
           distribution: temurin
           java-version: 21
 
-      - uses: android-actions/setup-android@v3
+      # l'Android SDK è già presente sul runner ubuntu-24.04 (ANDROID_HOME)
+      - name: Verifica Android SDK
+        run: echo "ANDROID_HOME=$ANDROID_HOME" && ls "$ANDROID_HOME/build-tools" "$ANDROID_HOME/platforms"
 
       - name: Versione
         run: |
