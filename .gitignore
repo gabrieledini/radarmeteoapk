@@ -1,6 +1,7 @@
-.gradle/
-build/
-local.properties
-.idea/
-*.iml
+node_modules/
+www/vendor/
+android/
+assets/*.png
+*.keystore
+*.jks
 .DS_Store
