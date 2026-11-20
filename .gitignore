@@ -1,7 +1,6 @@
-node_modules/
-www/vendor/
-android/
-assets/*.png
-*.keystore
-*.jks
+.gradle/
+build/
+local.properties
+.idea/
+*.iml
 .DS_Store
